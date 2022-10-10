@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "b0c17ffc-0922-48ff-a290-7c4461f24d41",
+		"name": "ZipCode",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23052707"
+	},
+	"item": [
+		{
+			"name": "Get information_ZIP code",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.zippopotam.us/in/{{pincode}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zippopotam",
+						"us"
+					],
+					"path": [
+						"in",
+						"{{pincode}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

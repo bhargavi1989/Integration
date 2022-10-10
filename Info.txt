@@ -1,0 +1,16 @@
+Newman command options:
+----------------------
+
+https://learning.postman.com/docs/running-collections/using-newman-cli/newman-options/
+
+Example:
+--------
+newman run UsersAutomation.postman_collection.json -d testData.csv -e Dev.postman_environment.json -n 1 -r htmlextra
+
+
+Above commands:
+--------------
+-d=> Data file
+-e=> Environment File
+-n=> No.of Iteration
+-r=> Report File Type
